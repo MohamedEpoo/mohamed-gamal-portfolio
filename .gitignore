@@ -1,0 +1,8 @@
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/node_modules
+/coverage
+.angular
+.DS_Store
