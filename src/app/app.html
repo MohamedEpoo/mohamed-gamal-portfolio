@@ -48,7 +48,7 @@
         <span>{{ text.heroTitleAccent }}</span>
       </h1>
       <p class="hero-description">
-        {{ text.heroDescriptionStart }} <strong>{{ text.brand }}</strong> —
+        {{ text.heroDescriptionStart }} <strong>{{ text.brand }}</strong>,
         {{ text.role }} {{ text.heroDescriptionEnd }}
       </p>
       <div class="hero-actions">
@@ -62,11 +62,12 @@
           href="https://www.linkedin.com/in/mohamed-gamal-a376603a3"
           target="_blank"
           rel="noreferrer"
+          dir="ltr"
         >
           LinkedIn <span>↗</span>
         </a>
-        <a href="https://github.com/MohamedEpoo" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-        <a href="mailto:hamo.gemy9889@gmail.com">Email <span>↗</span></a>
+        <a href="https://github.com/MohamedEpoo" target="_blank" rel="noreferrer" dir="ltr">GitHub <span>↗</span></a>
+        <a href="mailto:hamo.gemy9889@gmail.com" dir="ltr">Email <span>↗</span></a>
       </div>
     </div>
 
@@ -107,21 +108,22 @@
         <p>{{ text.aboutDescription }}</p>
         <a class="underlined-link" href="#contact">{{ text.learnMore }} <span>↙</span></a>
       </div>
-    </div>
-    <div class="approach">
-      <p class="approach-label">{{ text.approachLabel }}</p>
-      <div class="approach-grid">
-        @for (item of text.approach; track item.title; let index = $index) {
-          <article class="approach-card">
-            <div class="approach-card-top">
-              <span class="approach-icon" aria-hidden="true">{{ item.icon }}</span>
-              <span class="approach-number" dir="ltr">0{{ index + 1 }}</span>
-            </div>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
-          </article>
-        }
-      </div>
+      <aside class="about-visual" [attr.aria-label]="text.aboutVisualLabel">
+        <div class="about-visual-top">
+          <span class="about-visual-indicator" aria-hidden="true"></span>
+          <span>{{ text.aboutVisualLabel }}</span>
+          <span class="about-visual-mark" aria-hidden="true">✳</span>
+        </div>
+        <div class="about-visual-art" aria-hidden="true">
+          <span class="about-visual-symbol">&lt;/&gt;</span>
+          <span class="about-visual-spark">✦</span>
+        </div>
+        <div class="about-visual-caption">
+          <span>{{ text.aboutVisualTag }}</span>
+          <strong>{{ text.aboutVisualTitle }}<br /><em>{{ text.aboutVisualAccent }}</em></strong>
+          <small>{{ text.aboutVisualNote }}</small>
+        </div>
+      </aside>
     </div>
   </section>
 

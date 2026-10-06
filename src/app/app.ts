@@ -53,24 +53,11 @@ const copy = {
     aboutDescription:
       'الموقع الناجح مش مجرد شكل جميل؛ لازم يكون واضح وسريع وسهل الاستخدام. بشتغل على الواجهات من أول فكرة لحد أدق التفاصيل، وبستخدم أدوات الذكاء الاصطناعي للمساعدة في البحث واستكشاف الأفكار وتسريع المهام المتكررة، مع مراجعة النتائج بنفسي.',
     learnMore: 'اعرفني أكتر',
-    approachLabel: 'أسلوبي في العمل',
-    approach: [
-      {
-        icon: '</>',
-        title: 'واجهة مرتبة',
-        description: 'أحوّل الفكرة إلى واجهة واضحة ومتناسقة مع هوية المشروع.'
-      },
-      {
-        icon: '◎',
-        title: 'تجربة سهلة',
-        description: 'أهتم إن الموقع يكون بسيط في التصفح ومريح على مختلف الشاشات.'
-      },
-      {
-        icon: '✳',
-        title: 'تطوير بوعي',
-        description: 'أستخدم الأدوات الحديثة لتسريع الشغل، مع مراجعة كل تفصيلة بنفسي.'
-      }
-    ],
+    aboutVisualLabel: 'تصميم واجهات رقمية',
+    aboutVisualTag: 'تطوير واجهات',
+    aboutVisualTitle: 'من الفكرة',
+    aboutVisualAccent: 'لتجربة متكاملة',
+    aboutVisualNote: 'تفاصيل بسيطة تصنع فرقاً',
     workLabel: 'أعمال مختارة',
     workTitle: 'أفكار تحولت',
     workAccent: 'لواقع.',
@@ -86,10 +73,10 @@ const copy = {
     contactTitle: 'عندك فكرة؟',
     contactTitleSecond: 'خلينا نبدأها سوا.',
     sendMessage: 'ابعتلي رسالة',
-    footerNote: '© 2026 — صُنع بحب واهتمام',
+    footerNote: '© 2026. صُنع بحب واهتمام',
     githubProfile: 'GitHub',
-    phone: 'اتصال',
-    whatsapp: 'واتساب',
+    phone: 'Phone',
+    whatsapp: 'WhatsApp',
     contactPhone: '0100 849 3552',
     backToTop: 'العودة للأعلى ↑',
     emailSubject: 'بورتفوليو'
@@ -110,40 +97,27 @@ const copy = {
     heroTitleSecond: 'experiences',
     heroTitleAccent: 'worth remembering.',
     heroDescriptionStart: 'Hi, I’m',
-    role: 'a front-end developer',
-    heroDescriptionEnd: 'who loves turning ideas into thoughtful, fast, and easy-to-use websites.',
+    role: 'a front end developer',
+    heroDescriptionEnd: 'who loves turning ideas into thoughtful, fast, and easy to use websites.',
     viewWork: 'Explore my work',
     contactMe: 'Let’s talk',
     socialLinks: 'Social links',
     visualLabel: 'About Mohamed',
     visualCaption: 'Ideas → experiences',
     designNote: 'Thoughtful design',
-    roleNote: 'Front-end developer',
-    specialties: ['Web interfaces', 'Digital experiences', 'Angular', 'AI-assisted workflow'],
+    roleNote: 'Front end developer',
+    specialties: ['Web interfaces', 'Digital experiences', 'Angular', 'AI tools'],
     aboutLabel: 'About me',
     aboutTitle: 'Small details',
     aboutAccent: 'make a big difference.',
     aboutDescription:
       'A great website is more than good looks: it should be clear, fast, and easy to use. I build interfaces from the first idea to the finishing touches, and use AI tools to support research, explore ideas, and speed up repetitive tasks while reviewing the results myself.',
     learnMore: 'More about me',
-    approachLabel: 'How I work',
-    approach: [
-      {
-        icon: '</>',
-        title: 'Thoughtful interfaces',
-        description: 'I turn ideas into clear, consistent interfaces that fit each project.'
-      },
-      {
-        icon: '◎',
-        title: 'Easy experiences',
-        description: 'I focus on simple navigation and comfortable use across screen sizes.'
-      },
-      {
-        icon: '✳',
-        title: 'Intentional building',
-        description: 'I use modern tools to move faster, while reviewing every detail myself.'
-      }
-    ],
+    aboutVisualLabel: 'DIGITAL INTERFACES',
+    aboutVisualTag: 'Front end development',
+    aboutVisualTitle: 'From an idea',
+    aboutVisualAccent: 'to a real experience',
+    aboutVisualNote: 'Small details make a difference',
     workLabel: 'Selected work',
     workTitle: 'Ideas made',
     workAccent: 'real.',
@@ -154,12 +128,12 @@ const copy = {
     skillsTitle: 'The tools I use',
     skillsTitleSecond: 'to do my',
     skillsAccent: 'best work.',
-    skillsDescription: 'I bring together front-end development, thoughtful user experiences, and a responsible use of AI tools.',
+    skillsDescription: 'I bring together front end development, thoughtful user experiences, and a responsible use of AI tools.',
     nextStep: 'What’s next',
     contactTitle: 'Have an idea?',
     contactTitleSecond: 'Let’s build it together.',
     sendMessage: 'Send me a message',
-    footerNote: '© 2026 — Made with care',
+    footerNote: '© 2026. Made with care',
     githubProfile: 'GitHub',
     phone: 'Call',
     whatsapp: 'WhatsApp',
@@ -174,7 +148,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '01',
       category: 'تقنية وذكاء اصطناعي',
-      title: 'Codera — حلول الذكاء الاصطناعي',
+      title: 'Codera لحلول الذكاء الاصطناعي',
       description: 'موقع تعريفي لشركة تقنية تعرض حلول ذكاء اصطناعي تتطور مع احتياجات الأعمال.',
       image: 'projects/codera-brand.jpeg',
       imageAlt: 'فريق شركة Codera يتعاون على جهاز لوحي',
@@ -185,7 +159,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '02',
       category: 'نقل وخدمات لوجستية',
-      title: 'القافلة — خدمات النقل',
+      title: 'القافلة لخدمات النقل',
       description: 'موقع خدمات لوجستية يعرّف بحلول النقل والشحن مع التركيز على الأمان والاعتمادية.',
       image: 'projects/alqaffla-1.jpg',
       imageAlt: 'سفينة شحن ضمن مشهد من مشروع القافلة',
@@ -196,7 +170,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '03',
       category: 'خدمات تنظيف',
-      title: 'المزايا — تنظيف صديق للبيئة',
+      title: 'المزايا للتنظيف الصديق للبيئة',
       description: 'موقع لشركة تنظيف يعرّف بخدماتها وجودتها واستخدامها مواد آمنة وصديقة للبيئة.',
       image: 'projects/almazaya-service.jpg',
       imageAlt: 'سيدة تنظف غرفة باستخدام منتجات تنظيف من مشروع المزايا',
@@ -207,7 +181,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '04',
       category: 'استشارات وتقييم',
-      title: 'الرشيدين — خبراء التقييم',
+      title: 'الرشيدين خبراء التقييم',
       description: 'موقع تعريفي لمكتب خبرة واستشارات مع معلومات عن خدمات التقييم والاعتمادات.',
       image: 'projects/elrashdeen-banner.png',
       imageAlt: 'فريق عمل يتعاون على جهاز لوحي ضمن مشروع الرشيدين',
@@ -220,7 +194,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '01',
       category: 'AI & technology',
-      title: 'Codera — AI solutions',
+      title: 'Codera AI solutions',
       description: 'A technology company website showcasing AI solutions that evolve with business needs.',
       image: 'projects/codera-brand.jpeg',
       imageAlt: 'The Codera team collaborating around a tablet',
@@ -231,7 +205,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '02',
       category: 'Transport & logistics',
-      title: 'Alqaffla — Logistics',
+      title: 'Alqaffla Logistics',
       description: 'A logistics services website focused on dependable transport and safe shipping solutions.',
       image: 'projects/alqaffla-1.jpg',
       imageAlt: 'Cargo ship featured in the Alqaffla project',
@@ -242,7 +216,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '03',
       category: 'Cleaning services',
-      title: 'Almazaya — Eco-friendly cleaning',
+      title: 'Almazaya Eco friendly cleaning',
       description: 'A cleaning company website highlighting quality services and environmentally friendly products.',
       image: 'projects/almazaya-service.jpg',
       imageAlt: 'Woman cleaning a room in the Almazaya project',
@@ -253,7 +227,7 @@ const projects: Record<Language, Project[]> = {
     {
       number: '04',
       category: 'Consulting & valuation',
-      title: 'Elrashdeen — Valuation experts',
+      title: 'Elrashdeen Valuation experts',
       description: 'A consulting office website featuring valuation services, expertise, and official accreditations.',
       image: 'projects/elrashdeen-banner.png',
       imageAlt: 'Business team collaborating around a tablet for the Elrashdeen project',
@@ -334,15 +308,15 @@ export class App {
     this.document.documentElement.lang = this.language;
     this.document.documentElement.dir = this.isEnglish ? 'ltr' : 'rtl';
     this.document.title = this.isEnglish
-      ? 'Mohamed Gamal — Front-end Developer'
-      : 'محمد جمال — مطور واجهات أمامية';
+      ? 'Mohamed Gamal | Front end Developer'
+      : 'Mohamed Gamal | Front end Developer';
     this.document
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         'content',
         this.isEnglish
-          ? 'Mohamed Gamal’s portfolio — a front-end developer crafting thoughtful digital experiences.'
-          : 'بورتفوليو محمد جمال — مطور واجهات أمامية يصنع تجارب رقمية أنيقة وسهلة الاستخدام.'
+          ? 'Mohamed Gamal’s portfolio. A front end developer crafting thoughtful digital experiences.'
+          : 'بورتفوليو محمد جمال. مطور واجهات أمامية يصنع تجارب رقمية أنيقة وسهلة الاستخدام.'
       );
   }
 
